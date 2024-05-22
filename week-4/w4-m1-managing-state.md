@@ -331,5 +331,3 @@
         export default App;
         
         ```
-
-### **Preserving and Resetting State**
