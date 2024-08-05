@@ -29,7 +29,7 @@ CREATE TABLE products (
 Insert some records into the **`products`** table.
 
 ```sql
-NSERT INTO products (product_name, category, price, quantity, date_added) VALUES
+INSERT INTO products (product_name, category, price, quantity, date_added) VALUES
 ('Laptop', 'Electronics', 1200.00, 30, '2023-04-20'),
 ('Smartphone', 'Electronics', 800.00, 50, '2023-04-22'),
 ('Desk Chair', 'Furniture', 150.00, 20, '2023-04-25');
@@ -126,6 +126,6 @@ INSERT INTO suppliers (supplier_name, contact_name) VALUES
 
 SELECT p.product_name, p.category, p.price, s.supplier_name
 FROM products p
-JOIN suppliers s ON p.supplier_id = s.supplier_id;
+JOIN suppliers s ON p.product_id = s.supplier_id;
 
 ```
